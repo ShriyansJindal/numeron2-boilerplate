@@ -113,7 +113,6 @@ function startTimer(){
     timerID = setInterval(() => {
         time--
         localStorage.setItem("score",score)
-
         if(time==0){
             location.href = 'gameover.html'
         }
