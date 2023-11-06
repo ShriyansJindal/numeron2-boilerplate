@@ -17,8 +17,14 @@ generateRandom()
 function generateRandom(){
    n1 = Math.floor(Math.random()*100) 
    n2 = Math.floor(Math.random()*100) 
+   if(n1<n2){
+    let temp =n1;
+    n1=n2;
+    n2=temp
+   }
    number1.innerText = n1
    number2.innerText = n2
+
 }
 
 // Iteration 3: Creating variables required to make the game functional
